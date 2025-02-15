@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te amo</title>
+    <link rel="icon" href="Icone.png" type="image/png">
+    <style>
+         body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #351330; 
+        }
+        .Teamo {
+            text-align: center;
+            margin-top: -50px;
+        }
+        h1{
+            font-size: 75px;
+            font-family: cursive;
+            color: white;
+            text-shadow: 5px 6px 2px rgb(133, 0, 0);
+            
+        }
+        img {
+            border-radius: 10%;
+            margin-top: 50px;
+            margin-top: 50px;
+            border-style: dashed;
+            border-width: 10px;
+            border-color: rgb(133, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <audio id="musica" autoplay loop>
+        <source src="Disrtimia.mp3" type="audio/mp3">
+    </audio>
+        <div class="Teamo">
+            <h1><b>Eu te Amo!!!</b></h1>
+            <img src="Meu benzinho.jpg" alt="" width="225">
+        </div>
+    <script>
+        const musga = document.getElementById('musica');
+        window.addEventListener('DOMContentLoaded', function() {
+            if (musga) {
+                musga.play().then(() => {
+                    console.log('Reprodução automática iniciada com sucesso.');
+                }).catch((error) => {
+                    console.error('Reprodução automática foi bloqueada.', error);
+                });
+            }
+        });
+
+    </script>
+    </div>
+</body>
+</html>
